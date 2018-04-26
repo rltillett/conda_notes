@@ -2,6 +2,7 @@
 Go to [miniconda](https://conda.io/miniconda.html) download page and get ready to download the installer of your choice/system
 
 `wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh`
+
 or
 `wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 
@@ -21,7 +22,7 @@ conda config --add channels bioconda
 ```
 
 You have choices. There are two ways to install things with conda.
-1. Directly `conda install [thing]`
+1. Directly e.g. `conda install bowtie2`
 2. Toggle-able Environments `conda create -n [my_cool_env] [thing1] [thing2]` + `source activate [my_cool_env]`
 
 Searching for packages
@@ -36,7 +37,7 @@ If you forget the names of some of your Environments
 to see what is a part of that Environment
 `conda list -n my_cool_env`
 
-To install new things (here, seqtk) to an environment you already made
+To install new things (here, seqtk) to an environment you previously made
 `conda install -n kallisto_env seqtk`
 
 Updating conda
@@ -47,6 +48,7 @@ Updating installed packages (here, bowtie2, directly installed)
 
 
 changing Environments
-`source deactivate`
-
-`source activate kallisto_env`
+```
+source deactivate
+source activate kallisto_env
+```
