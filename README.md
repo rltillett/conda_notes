@@ -1,1 +1,52 @@
 # conda_notes
+Go to [miniconda](https://conda.io/miniconda.html) download page and get ready to download the installer of your choice/system
+
+`wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh`
+or
+`wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh`
+
+(on a Mac you might use)
+`curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh`
+
+execute the installer (And be ready to interact with it a little bit)
+`chmod +x Miniconda3-latest-Linux-x86_64.sh`
+`./Miniconda3-latest-Linux-x86_64.sh`
+
+Now we install some useful channels (searchable repositories, essentially) for Miniconda
+```
+conda config --add channels r
+conda config --add channels defaults
+conda config --add channels conda-forge
+conda config --add channels bioconda
+```
+
+You have choices. There are two ways to install things with conda.
+1. Directly `conda install [thing]`
+2. Toggle-able Environments `conda create -n [my_cool_env] [thing1] [thing2]` + `source activate [my_cool_env]`
+
+Searching for packages
+`conda search kallisto`
+`conda search sleuth`
+
+To check the configuration of your conda installation
+`conda info`
+
+If you forget the names of some of your Environments
+`conda info -e`
+to see what is a part of that Environment
+`conda list -n my_cool_env`
+
+To install new things (here, seqtk) to an environment you already made
+`conda install -n kallisto_env seqtk`
+
+Updating conda
+`conda update conda`
+
+Updating installed packages (here, bowtie2, directly installed)
+`conda update bowtie2`
+
+
+changing Environments
+`source deactivate`
+
+`source activate kallisto_env`
