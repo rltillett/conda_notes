@@ -24,14 +24,16 @@ conda config --add channels bioconda
 ```
 ## Using conda to install bioinformatics tools
 Searching for packages by name
-`conda search kallisto`
-`conda search sleuth`
+```
+conda search kallisto
+conda search sleuth
+```
 
 Installing named packages: You have choices. There are two ways to install things with conda.
 1. Directly e.g. `conda install bowtie2`
 2. Toggle-able Environments `conda create -n [my_cool_env] [thing1] [thing2]` + `source activate [my_cool_env]`
 Using environments is smarter in the long run. Why?
-
+It comes with cognitive costs, though. You have to remember to activate your desired environment after logging in.
 
 ## What did I do last month?
 To check the configuration of your conda installation
@@ -41,13 +43,14 @@ If you forget the names of some of your Environments
 to see what is a part of that Environment
 `conda list -n my_cool_env`
 
+## Modifying installed things
 To install new things (here, seqtk) to an environment you previously made
 `conda install -n kallisto_env seqtk`
 
 Updating conda
 `conda update conda`
 
-Updating installed packages (here, bowtie2, directly installed)
+Updating installed packages 
 `conda update bowtie2`
 `conda update -n kallisto_env seqtk`
 
