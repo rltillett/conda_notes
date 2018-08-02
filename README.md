@@ -1,10 +1,11 @@
 # conda_notes
 ## Installing miniconda
-Go to [miniconda](https://conda.io/miniconda.html) download page and get ready to download the installer of your choice/system
+Go to [miniconda](https://conda.io/miniconda.html) download page and get ready to download the installer of your choice/system.
 
+For miniconda 2 on linux
 `wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh`
 
-or
+For miniconda 3 on linux
 `wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 
 (on a Mac you might use)
