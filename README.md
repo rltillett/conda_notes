@@ -12,8 +12,10 @@
 `curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh`
 
  * execute the installer (And be ready to interact with it a little bit)
-`chmod +x Miniconda3-latest-Linux-x86_64.sh`
-`./Miniconda3-latest-Linux-x86_64.sh`
+```
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+```
 
 ## Configuring your conda with channels 
 Now we install some useful channels (searchable repositories, essentially) for Miniconda
@@ -32,11 +34,15 @@ conda search sleuth
 
 Installing named packages: You have choices. There are two ways to install things with conda.
 1. Directly e.g. `conda install bowtie2`
-2. Toggle-able Environments `conda create -n [my_cool_env] [thing1] [thing2]` + `source activate [my_cool_env]`
+2. Toggle-able Environments 
+```
+conda create -n [my_cool_env] [thing1] [thing2]
+source activate [my_cool_env]
+```
 Using environments is smarter in the long run. Why?
 It comes with cognitive costs, though. You have to remember to activate your desired environment after logging in.
 
-## What did I do last month?
+## What did I install last week/month/year?
 To check the configuration of your conda installation
 `conda info`
 If you forget the names of some of your Environments
