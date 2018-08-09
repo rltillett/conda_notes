@@ -54,14 +54,14 @@ to see what is a part of that Environment
 To install new things (here, seqtk) to an environment you previously made
 `conda install -n kallisto_env seqtk`
 
-Updating conda
+### Updating conda
 `conda update conda`
 
-Updating installed packages 
+### Updating installed packages 
 `conda update bowtie2`
 `conda update -n kallisto_env seqtk`
 
-Toggling Environments
+## Toggling Environments
 ```
 source deactivate
 source activate kallisto_env
