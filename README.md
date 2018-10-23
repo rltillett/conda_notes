@@ -47,9 +47,9 @@ conda search bowtie-2
 
 So, kallisto is found, but bowtie-2 is not. Let's use google to see if there might be a sleuth package but with a different name than the one we searched for. Google `conda bowtie-2`
 
-It looks like the correct package name is `r-sleuth`. Let's try:
+It looks like the correct package name is `bowtie2`. Let's try:
 
-`conda search r-sleuth`
+`conda search bowtie2`
 
 ## Installing named packages:
 
