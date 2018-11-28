@@ -79,6 +79,16 @@ And deactivate the env thusly
 
 `source deactivate`
 
+### Installing a specific version of a package in a new environment
+
+To create a specifc environment for Stacks, version 1.47, this command looks like:
+
+```
+conda create -n stacks147_env stacks.1.47
+```
+
+
+
 ## What did I install last week/month/year?
 
 First, take a look at the usage and syntax for `conda info`, by using
