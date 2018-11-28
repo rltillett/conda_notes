@@ -84,7 +84,7 @@ And deactivate the env thusly
 To create a specifc environment for Stacks, version 1.47, this command looks like:
 
 ```
-conda create -n stacks147_env stacks.1.47
+conda create -n stacks147_env stacks=1.47
 ```
 
 
