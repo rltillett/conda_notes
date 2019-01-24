@@ -21,7 +21,7 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 ```
 
-It will run for a bit, then ask you to scroll through the license and confirm installation details. Then it will run for a bit more. When it is complete, it instructs us to exit our terminal and launch a new one. Let's do exactly that.
+It will run for a bit, then ask you to scroll through the license and confirm installation details. Then it will run for a bit more. When it is complete, **it instructs us to exit our terminal and launch a new one. Let's do exactly that.**
 
 ## Configuring your conda with channels
 Now we install some useful channels (searchable repositories, essentially) for Miniconda
