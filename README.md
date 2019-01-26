@@ -1,20 +1,30 @@
 # Conda notes
+
+## What is conda?
+
+Conda is a package manager for installing software on Linux (and Mac) systems. However, unlike the mainline package managers `yum` and `apt` that ship with Fedora/CentOS/RHEL and Ubuntu/Debian, respectively, conda lets you **install software without requiring sudo privileges.** This makes conda an excellent choice for end-users of shared systems, HPC systems, etc.
+
+The conda project has strong ties to the python community, so it makes sense that a great many python libraries can be found in the `default` and `anaconda` channels, among others. For bioinformatics researchers and life scientists (including this author), there `bioconda` channel is generally excellent too.
+
+The aim of this document is to walk new users of conda through miniconda installation steps, setting up their channels, finding and installing packages, showing the smart practice of using environments, and other useful conda commands.
+
+For more detailed documentation, check out the official docs too.
+
+* Conda documentation [docs home](https://conda.io/projects/conda/en/latest/) and [conda user guide -- getting started](https://conda.io/projects/conda/en/latest/user-guide/getting-started.html)
+* Bioconda [https://bioconda.github.io](https://bioconda.github.io)
+
 ## Installing miniconda
-* Go to [miniconda](https://conda.io/miniconda.html) download page and get ready to download the installer of your choice/system.
 
-  * For miniconda 2 on linux
+Visit the [miniconda](https://conda.io/miniconda.html) download page and get ready to download the installer of your choice/system.
 
-`wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh`
+* For miniconda 2 on linux
+  * `wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh`
+* For miniconda 3 on linux **(we will install this one, miniconda 3)**
+  * `wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh`
+* Mac users who want python3-based miniconda might use this command:
+  * `curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh`
 
-  * For miniconda 3 on linux **(we will install this one, miniconda 3)**
-
-`wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh`
-
-  * (on a Mac you might use)
-
-`curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh`
-
- * execute the installer (And be ready to interact with it a little bit)
+Next, make the installer executable with `chmod` and then run the installer. Be prepared to interact with it a little bit, which will include reading (scrolling) through a EULA.
 
 ```
 chmod +x Miniconda3-latest-Linux-x86_64.sh
