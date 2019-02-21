@@ -26,7 +26,7 @@ Visit the [miniconda](https://conda.io/miniconda.html) download page and get rea
 
 Next, make the installer executable with `chmod` and then run the installer. Be prepared to interact with it a little bit, which will include reading (scrolling) through a EULA.
 
-```
+```shell
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
 ```
@@ -36,7 +36,7 @@ It will run for a bit, then ask you to scroll through the license and confirm in
 ## Configuring your conda with channels
 Now we install some useful channels (searchable repositories, essentially) for Miniconda
 
-```
+```shell
 conda config --add channels r
 conda config --add channels defaults
 conda config --add channels conda-forge
@@ -49,7 +49,7 @@ Searching for packages by (exact) name
 
 Let's try searching for Lior Pachter's kallisto RNA-seq tool, and the slightly more traditional bowtie-2 alignment tool
 
-```
+```shell
 conda search kallisto
 conda search samtools
 conda search bowtie-2
@@ -71,7 +71,7 @@ Option 1 is much simpler. It installs it without an environmentm into your base 
 
 Installing to an environment, and activating the environment take these two forms:
 
-```
+```shell
 conda create -n [my_cool_env] [tool1] [tool2] ... [toolN]
 source activate [my_cool_env]
 ```
@@ -93,7 +93,7 @@ And deactivate the env thusly
 
 To create a specifc environment for Stacks, version 1.47, this command looks like:
 
-```
+```shell
 conda create -n stacks147_env stacks=1.47
 ```
 
@@ -149,7 +149,7 @@ Updating a tool that is in an environment
 ## Toggling Environments
 
 (if in an environment)
-```
+```shell
 source deactivate
 source activate align_env
 ```
