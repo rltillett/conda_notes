@@ -17,9 +17,7 @@ For more detailed documentation, check out the official docs too.
 
 Visit the [miniconda](https://conda.io/miniconda.html) download page and get ready to download the installer of your choice/system.
 
-* For miniconda 2 on linux
-  * `wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh`
-* For miniconda 3 on linux **(we will install this one, miniconda 3)**
+* For miniconda 3 on linux **(we will install this one, miniconda 3 for Linux)**
   * `wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh`
 * Mac users who want python3-based miniconda might use this command:
   * `curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh`
