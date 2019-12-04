@@ -71,7 +71,7 @@ Installing to an environment, and activating the environment take these two form
 
 ```bash
 conda create -n [my_cool_env] [tool1] [tool2] ... [toolN]
-source activate [my_cool_env]
+conda activate [my_cool_env]
 ```
 Using environments is smarter in the long run. It comes with cognitive costs, though. You have to remember your environment name (or look for it) and activate your desired environment after logging in.
 
@@ -81,11 +81,11 @@ Let's install bowtie2 and samtools into an environment.
 
 You can activate the `align_env` to use these versions
 
-`source activate align_env` (and now verify that they're installed using `which` and test run them too)
+`conda activate align_env` (and now verify that they're installed using `which` and test run them too)
 
 And deactivate the env thusly
 
-`source deactivate`
+`conda deactivate`
 
 ### Installing a specific version of a package in a new environment
 
